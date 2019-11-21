@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="blank">#000000</color>
+    <color name="bluebutton">#1a6bae</color>
+    <color name="yellow">#FFED00</color>
+    <color name="bluetheme01">#005AA5</color>
+
+    <color name="bluetrans02">#0CFFFFFF</color>
+
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="colorContaBackground">#f8f8f8</color>
+    <color name="colorContaFont">#5c5c5c</color>
+
+    <color name="slideColor">#50b414</color>
+    <color name="slideDotsSelColor">#6e6e6e</color>
+    <color name="slideDotsUnSelColor">#d4d4d4</color>
+    <color name="slideThirdShadow">#0D000000</color>
+
+    <color name="colorPrimaryDuo">#262938</color>
+    <color name="colorPrimaryDarkDuo">#181A24</color>
+    <color name="colorAccentDuo">#FF4081</color>
+    <color name="colorWhite">#FFFFFF</color>
+</resources>

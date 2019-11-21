@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageViewSlide"
+        android:layout_width="121dp"
+        android:layout_height="121dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/conta_01" />
+
+    <TextView
+        android:id="@+id/slideHead"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Abra sua conta\n agora mesmo."
+        android:textAlignment="center"
+        android:textColor="@color/colorContaFont"
+        android:textSize="20sp"
+        android:typeface="normal"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewSlide"
+        app:layout_constraintStart_toStartOf="@+id/imageViewSlide"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewSlide" />
+
+    <TextView
+        android:id="@+id/slideSubHead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="Você abre sua conta de forma\n rápida e com toda segurança\n do Banco do Brasil."
+        android:textAlignment="center"
+        android:textColor="@color/colorContaFont"
+        android:textSize="18sp"
+        android:typeface="normal"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewSlide"
+        app:layout_constraintStart_toStartOf="@+id/imageViewSlide"
+        app:layout_constraintTop_toBottomOf="@+id/slideHead" />
+
+</android.support.constraint.ConstraintLayout>

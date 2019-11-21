@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NovoAct"
+    android:background="@color/bluetheme01">
+
+    <ImageButton
+        android:id="@+id/btnBackMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:background="@android:color/transparent"
+        android:tint="@android:color/background_light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/homeAsUpIndicator" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="44dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_dialog_dialer" />
+
+    <TextView
+        android:id="@+id/tema"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="O que você precisa?"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@+id/btnContaPessoal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBackMenu" />
+
+    <ImageView
+        android:id="@+id/imageConta"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/btnContaPessoal"
+        app:layout_constraintTop_toTopOf="@+id/btnContaPessoal"
+        app:srcCompat="@drawable/s02_01" />
+
+    <Button
+        android:id="@+id/btnContaPessoal"
+        android:layout_width="0dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/bluetrans02"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tema" />
+
+    <TextView
+        android:id="@+id/textConta"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Conta pessoal"
+        android:textColor="@color/yellow"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/btnContaPessoal"
+        app:layout_constraintTop_toTopOf="@+id/btnContaPessoal" />
+
+    <TextView
+        android:id="@+id/textSubConta"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="Quer abrir uma conta corrente para mim."
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="@+id/btnContaPessoal"
+        app:layout_constraintEnd_toStartOf="@+id/imageConta"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnContaPessoal"
+        app:layout_constraintTop_toBottomOf="@+id/textConta" />
+
+    <ImageView
+        android:id="@+id/imageCredit"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/btnCreditCard"
+        app:layout_constraintTop_toTopOf="@+id/btnCreditCard"
+        app:srcCompat="@drawable/s02_01"  />
+
+    <Button
+        android:id="@+id/btnCreditCard"
+        android:layout_width="0dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/bluetrans02"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnContaPessoal" />
+
+    <TextView
+        android:id="@+id/textCredit"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Cartão de crédito"
+        android:textColor="@color/yellow"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/btnCreditCard"
+        app:layout_constraintTop_toTopOf="@+id/btnCreditCard" />
+
+    <TextView
+        android:id="@+id/textSubCredit"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="Quero apenas um cartão de crédito Ourocard."
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="@+id/btnCreditCard"
+        app:layout_constraintEnd_toStartOf="@+id/imageCredit"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnCreditCard"
+        app:layout_constraintTop_toBottomOf="@+id/textCredit" />
+
+    <ImageView
+        android:id="@+id/imageEmp"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/btnContaEmpresarial"
+        app:layout_constraintTop_toTopOf="@+id/btnContaEmpresarial"
+        app:srcCompat="@drawable/s02_01"  />
+
+    <Button
+        android:id="@+id/btnContaEmpresarial"
+        android:layout_width="0dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/bluetrans02"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCreditCard" />
+
+    <TextView
+        android:id="@+id/textContaEmp"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Conta Empresarial"
+        android:textColor="@color/yellow"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/btnContaEmpresarial"
+        app:layout_constraintTop_toTopOf="@+id/btnContaEmpresarial" />
+
+    <TextView
+        android:id="@+id/textSubContaEmp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="Quero abrir uma conta corrente para minha empresa."
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="@+id/btnContaEmpresarial"
+        app:layout_constraintEnd_toStartOf="@+id/imageEmp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnContaEmpresarial"
+        app:layout_constraintTop_toBottomOf="@+id/textContaEmp" />
+
+</android.support.constraint.ConstraintLayout>
